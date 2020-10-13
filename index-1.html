@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>vijay website</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/fonts/fontawesome5-overrides.min.css">
+    <link rel="stylesheet" href="assets/css/Carousel-Hero.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body><nav>
+      <div class="menu-icon">
+<span class="fas fa-bars"></span></div>
+<div class="logo">
+VIJAY4U</div>
+<div class="nav-items">
+<li><a href="#">HOME</a></li>
+<li><a href="#">ABOUT VIJAY</a></li>
+<li><a href="#">VIJAY UPDATES</a></li>
+<li><a href="#">BLOG</a></li>
+<li><a href="#">CONTACT</a></li>
+</div>
+<div class="search-icon">
+<span class="fas fa-search"></span></div>
+<div class="cancel-icon">
+<span class="fas fa-times"></span></div>
+<form action="#">
+        <input type="search" class="search-data" placeholder="Search" required="">
+        <button type="submit" class="fas fa-search"></button>
+      </form>
+</nav>
+
+<script>
+    const menuBtn = document.querySelector(".menu-icon span");
+    const searchBtn = document.querySelector(".search-icon");
+    const cancelBtn = document.querySelector(".cancel-icon");
+    const items = document.querySelector(".nav-items");
+    const form = document.querySelector("form");
+    menuBtn.onclick = ()=>{
+      items.classList.add("active");
+      menuBtn.classList.add("hide");
+      searchBtn.classList.add("hide");
+      cancelBtn.classList.add("show");
+    }
+    cancelBtn.onclick = ()=>{
+      items.classList.remove("active");
+      menuBtn.classList.remove("hide");
+      searchBtn.classList.remove("hide");
+      cancelBtn.classList.remove("show");
+      form.classList.remove("active");
+      cancelBtn.style.color = "#ff3d00";
+    }
+    searchBtn.onclick = ()=>{
+      form.classList.add("active");
+      searchBtn.classList.add("hide");
+      cancelBtn.classList.add("show");
+    }
+  </script>
+    <div class="carousel slide" data-ride="carousel" id="carousel-1">
+        <div class="carousel-inner" role="listbox">
+            <div class="carousel-item active">
+                <div class="jumbotron hero-nature carousel-hero" style="width: 100%;height: 100vh;background-image: url(&quot;assets/img/aalaporaan_thamizhan.jpg&quot;);"></div>
+            </div>
+            <div class="carousel-item">
+                <div class="jumbotron hero-photography carousel-hero" style="background-image: url(&quot;assets/img/atm-upscaled-still_49287568998_o.jpg&quot;);width: 100%;height: 100vh;background-position: center;background-size: cover;background-repeat: no-repeat;"></div>
+            </div>
+            <div class="carousel-item">
+                <div class="jumbotron hero-technology carousel-hero" style="background-image: url(&quot;assets/img/_k0u6322_14574316528_o.jpg&quot;);width: 100%;height: 100vh;background-size: cover;background-repeat: no-repeat;background-position: top;"></div>
+            </div>
+            <div class="carousel-item">
+                <div class="jumbotron hero-technology carousel-hero" style="background-image: url(&quot;assets/img/atm-upscaled-still_49272967532_o.jpg&quot;);width: 100%;height: 100vh;background-size: cover;background-repeat: no-repeat;"></div>
+            </div>
+            <div class="carousel-item">
+                <div class="jumbotron hero-technology carousel-hero" style="background-image: url(&quot;assets/img/sachein-uhd_10459827294_o.jpg&quot;);width: 100%;height: 100vh;background-size: cover;background-repeat: no-repeat;background-position: top;"></div>
+            </div>
+        </div>
+        <div><a class="carousel-control-prev" href="#carousel-1" role="button" data-slide="prev"><i class="fa fa-chevron-left"></i><span class="sr-only">Previous</span></a><a class="carousel-control-next" href="#carousel-1" role="button" data-slide="next"><i class="fa fa-chevron-right"></i><span class="sr-only">Next</span></a></div>
+        <ol
+            class="carousel-indicators">
+            <li data-target="#carousel-1" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-1" data-slide-to="1"></li>
+            <li data-target="#carousel-1" data-slide-to="2"></li>
+            <li data-target="#carousel-1" data-slide-to="3"></li>
+            <li data-target="#carousel-1" data-slide-to="4"></li>
+            </ol>
+    </div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+</body>
+
+</html>
